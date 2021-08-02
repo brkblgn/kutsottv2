@@ -1,10 +1,11 @@
 import mongoose from 'mongoose';
 
 const recordSchema = new mongoose.Schema({
-    tempature: Number,
-    humidity: Number,
-    light: Number,
-    pressure: Number,
+    tempatureDHT: String,
+    tempatureBMP: String,
+    humidity: String,
+    light: String,
+    pressure: String,
     device: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Device'
