@@ -6,6 +6,7 @@ const recordSchema = new mongoose.Schema({
     humidity: String,
     light: String,
     pressure: String,
+    altitude: String,
     device: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Device'
